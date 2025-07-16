@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>Student registration form</title>
+         <style>
+		
+		     *{
+			   padding:0;
+			   margin:7px;
+			  }
+			 fieldset{
+			          display:inline-block;
+					  margin:auto;
+					  width:60%;
+					  border:none;
+					  background-color:lightpink;
+					  
+			  }
+			  label{
+			        display:inline-block;
+					width:20%;
+			  }
+			  .main{
+			        display:flex;
+					justify-content:center;
+			  }
+			  .heading{
+			        display:flex;
+					justify-content:center;
+			  }
+			 .button{
+			        display:flex;
+					justify-content:center;
+					padding:10px;
+					margin:5px;
+			  }
+			  .sn{
+			      display:flex;
+				  width:100%;
+				  
+			  }
+			  textarea{
+			    width:55%;
+			   }
+			 
+         </style>
+     </head>
+     <body>
+	             <!------------------------------- form stars here-------------------------------------->
+	     <form>
+		     <div class="main">
+		     <fieldset>
+			     <!---------------------------------require content------------------------------------->
+			     <div class="heading">
+			         <h1>Student Registration Form</h1>
+				 </div>
+				 <div >
+				     <label for="roll">Roll no.</label>:
+					 <input id="roll" type="text" name="roll" size="40"/>
+				 </div>
+				 <div class="sn">
+				     <label for="Sname">Student name</label>:
+					 
+					 <input id="Sname" type="text" name="Sname" placeholder="first name" size="20">-
+					 <input id="Sname" type="text" name="Sname" placeholder="last name" size="12">
+				 </div>
+				 <div>
+				     <label for="fname">Father's name </label>:
+					 <input id="fname" type="text" name="fname" size="40">
+				 </div>
+				 <div>
+				     <label for="dob">Date of birth</label>:
+				     <input id="dob" type="text" name="dob" placeholder="Day" size="1">-
+					 <input id="dob" type="text" name="dob" placeholder="Month" size="1">-
+				     <input id="dob" type="text" name="dob" placeholder="Year" size="2"> <i>(DD-MM-YYYY)</i>
+				 </div>
+				 <div>
+				     <label for="mob">Mobile no.</label>:
+				     <input id="mob" type="text" name="mob" value="+91" size="3">-
+					 <input id="mob" type="text" name="text" maxlength="10" size="29">
+				 </div>
+				 <div>
+				     <label for="email">Email id</label>:
+					 <input id="email" type="email" name="email" size="40">
+				 </div>
+	             <!------------------------------- Password required-------------------------------------->
+				 <div>
+				     <label for="pass">Password</label>:
+					 <input id="pass" type="password" name="pass" size="40">
+				 </div>
+				 <div>
+				     <label for="gen">Gender</label>:
+					 <input id="gen" type="radio" name="gen">Male
+					 <input id="gen" type="radio" name="gen">Female
+				 </div>
+				 <div>
+				     <label for="dep">Department</label>:
+					 <input id="dep" type="checkbox" name="dep">CSE
+					 <input id="dep" type="checkbox" name="dep">IT
+					 <input id="dep" type="checkbox" name="dep">ECE
+					 <input id="dep" type="checkbox" name="dep">Civil
+					 <input id="dep" type="checkbox" name="dep">Mech
+				 </div>
+				 <div>
+				     <label for="course">Course</label>:
+					 <select>
+					     <option>------------------Select Current Course------------------</option>
+					 </select>
+				 </div>
+				 <div>
+				     <label for="sphoto">Students photo</label>:
+					 <input id="sphoto" type="file" name="sphoto">
+				 </div>
+				 <div>
+				     <label for="city">City</label>:
+					 <input id="city" type="text" name="city" size="40">
+				 </div>
+				 <div>
+				 
+				     <label for="addr" class="add">Address</label>:
+					 <textarea rows="4" cols="30"></textarea>
+				 </div>
+				 <div class="button">
+				     <button>Register</button>
+				 </div>
+			 </fieldset>
+			 </div>
+	             <!------------------------------- form ends here---------------------------------------->
+		 </form>
+	 </body>
+</html>
